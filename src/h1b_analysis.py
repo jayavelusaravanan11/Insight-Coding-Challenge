@@ -105,7 +105,7 @@ def main():
 			perc_list_occupations.append(per_value_round)
 		#Join three lists , sort them in reverse order and get the top 10 values for occupations
 		pair_occupations=[list(a) for a in zip(cert_occupations_l,freq_list_occupations,perc_list_occupations)]
-		list_top_10_occupations=sorted(pair_occupations,key=lambda pair_occupations: pair_occupations[1], reverse=True)[:10]
+		list_top_10_occupations=sorted(pair_occupations,key=lambda pair_occupations: pair_occupations[1], reverse=True)[:9]
 		#Call function get_unique_values to get the list of unique states with certifications
 		cert_states_l=get_unique_values(cert_states)
 		#count(*) unique certified states and insert into list
@@ -119,7 +119,7 @@ def main():
 			perc_list_states.append(per_value_round)
 		#Join three lists , sort them in reverse order and get the top 10 values for states
 		pair_states=[list(a) for a in zip(cert_states_l,freq_list_states,perc_list_states)]
-		list_top_10_states=sorted(pair_states,key=lambda pair_states: pair_states[1], reverse=True)[:10]
+		list_top_10_states=sorted(pair_states,key=lambda pair_states: pair_states[1], reverse=True)[:9]
 	#Populate header lists and call function writefile to complete writing results to the top10_occupations and top10_states files
 	header_occupations = ['TOP_OCCUPATIONS', 'NUMBER_CERTIFIED_APPLICATIONS', 'PERCENTAGE']
 	header_states = ['TOP_STATES', 'NUMBER_CERTIFIED_APPLICATIONS' , 'PERCENTAGE']
