@@ -15,8 +15,11 @@ Instructions
   Here's the logic
   
   1. Open and loop through the inputfile 
-  2.  Filter out  the rows where CASE_STATUS is not CERTIFIED
-  3. For two rows which are certified , build two lists viz distinct SOC_NAME's and distict EMPLOYER_STATE
-  4.  Get a count of all disticnt SOC_NAME and employer_state based on CERTIFIED Filter data .
-  5. Get the percentages of the distinct SOC_NAME
-  6.  Write to two files top_10_occupations and top_10_states 
+  2.  Only accept the rows where status is Certified
+  3. For those rows which are certified , build two lists viz distinct SOC_NAME's and distict EMPLOYER_STATE
+  4.  Get a count of all distinct SOC_NAME and employer_state .
+  5. Get the percentages of the distinct SOC_NAME and distinct employer_states
+  6.  Append three lists into one list for SOC_NAME ( SOC_NAME , COUNT , Percentage) 
+  7.  Write to file top_10_occupations 
+  8. Append three lists into one list for Employer_state ( Employer_state, COUNT , Percentage) 
+  9.  Write to file top_10_states 
