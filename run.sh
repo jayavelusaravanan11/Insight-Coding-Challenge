@@ -5,4 +5,4 @@
 #4. The column name of soc_name as column names change between inputfiles . Note the awkward case . The program converts to uppsercase
 #5. The column name of employer_statel as column names change between inputfiles . Note the awkward case . The program converts to uppsercase
 #6 Two outputfiles provided as individual arguments
-python ./src/h1b_analysis.py ./input/H1B_FY_2015-split1.csv case_statuS soc_NamE EMPLOyER_state ./output/top_10_occupations.txt ./output/top_10_states.txt
+python3 ./src/h1b_analysis.py ./input/H1B_FY_2015-split1.csv case_statuS soc_NamE EMPLOyER_state ./output/top_10_occupations.txt ./output/top_10_states.txt
